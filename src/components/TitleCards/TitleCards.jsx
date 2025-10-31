@@ -11,7 +11,7 @@ const TitleCards = ({title,category}) => {
        method: 'GET',
        headers: {
          accept: 'application/json',
-         Authorization: `Bearer ${process.env.REACT_APP_TMDB_BEARER}`
+         Authorization: `Bearer ${import.meta.env.VITE_TMDB_BEARER}`
        }
      };
   useEffect(()=>{
